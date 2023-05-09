@@ -34,7 +34,7 @@ class LibraryManagementSystem:
 
         #=======================================DataFrameLeft=============================
 
-        DataFrameLeft=LabelFrame(frame,text="Library Membership Information",bg="powder blue",fg="green",bd=12,relief=RIDGE,font=("times new roman",12,"bold"))
+        DataFrameLeft=LabelFrame(frame,text="Library Membership Information",bg="powder blue",fg="green",bd=12,relief=RIDGE,font=("times new roman",14,"bold"))
         DataFrameLeft.place(x=0,y=5,width=900,height=350)
 
         lblMember=Label(DataFrameLeft,bg="powder blue",text="Member Type", font=("arial",12,"bold"),padx=2,pady=6) 
@@ -46,69 +46,69 @@ class LibraryManagementSystem:
         comMember.grid(row=0,column=1)
 
 
-        lblIDNO=Label(DataFrameLeft,font=("arial",12,"bold"),text="ID No:",padx=2,pady=6,bg="powder blue")
+        lblIDNO=Label(DataFrameLeft,font=("arial",12,"bold"),text="ID No:",padx=2,pady=11,bg="powder blue")
         lblIDNO.grid(row=1,column=0,sticky=W)
         txtIDNO=Entry(DataFrameLeft,font=("arial",13,"bold"),textvariable=self.id_var,width=29)
         txtIDNO.grid(row=1,column=1)
 
-        lblFirstName=Label(DataFrameLeft,font=("arial",12,"bold"),text="First Name:",padx=2,pady=6,bg="powder blue")
+        lblFirstName=Label(DataFrameLeft,font=("arial",12,"bold"),text="First Name:",padx=2,pady=11,bg="powder blue")
         lblFirstName.grid(row=2,column=0,sticky=W)
         txtFirstName=Entry(DataFrameLeft,font=("arial",13,"bold"),textvariable=self.firstname_var,width=29)
         txtFirstName.grid(row=2,column=1)
 
-        lblLastName=Label(DataFrameLeft,font=("arial",12,"bold"),text="Last Name:",padx=2,pady=6,bg="powder blue")
+        lblLastName=Label(DataFrameLeft,font=("arial",12,"bold"),text="Last Name:",padx=2,pady=11,bg="powder blue")
         lblLastName.grid(row=3,column=0,sticky=W)
         txtLastName=Entry(DataFrameLeft,font=("arial",13,"bold"),textvariable=self.lastname_var,width=29)
         txtLastName.grid(row=3,column=1)
 
-        lblAddress1=Label(DataFrameLeft,font=("arial",12,"bold"),text="Address 1:",padx=2,pady=6,bg="powder blue")
+        lblAddress1=Label(DataFrameLeft,font=("arial",12,"bold"),text="Address 1:",padx=2,pady=11,bg="powder blue")
         lblAddress1.grid(row=4,column=0,sticky=W)
         txtAddress1=Entry(DataFrameLeft,font=("arial",13,"bold"),textvariable=self.address1_var,width=29)
         txtAddress1.grid(row=4,column=1)
 
-        lblAddress2=Label(DataFrameLeft,font=("arial",12,"bold"),text="Address 2:",padx=2,pady=6,bg="powder blue")
+        lblAddress2=Label(DataFrameLeft,font=("arial",12,"bold"),text="Address 2:",padx=2,pady=11,bg="powder blue")
         lblAddress2.grid(row=5,column=0,sticky=W)
         txtAddress2=Entry(DataFrameLeft,font=("arial",13,"bold"),textvariable=self.address2_var,width=29)
         txtAddress2.grid(row=5,column=1)
 
 
-        lblMobile=Label(DataFrameLeft,font=("arial",12,"bold"),text="Mobile:",padx=2,pady=6,bg="powder blue")
+        lblMobile=Label(DataFrameLeft,font=("arial",12,"bold"),text="Mobile:",padx=2,pady=11,bg="powder blue")
         lblMobile.grid(row=6,column=0,sticky=W)
         txtMobile=Entry(DataFrameLeft,font=("arial",13,"bold"),textvariable=self.mobile_var,width=29)
         txtMobile.grid(row=6,column=1)
 
-        lblBookId=Label(DataFrameLeft,font=("arial",12,"bold"),text="Book Id:",padx=2,pady=6,bg="powder blue")
+        lblBookId=Label(DataFrameLeft,font=("arial",12,"bold"),text="Book Id:",padx=30,pady=6,bg="powder blue")
         lblBookId.grid(row=0,column=2,sticky=W)
         txtBookId=Entry(DataFrameLeft,font=("arial",12,"bold"),textvariable=self.bookid_var,width=29)
         txtBookId.grid(row=0,column=3)
 
-        lblBookTitle=Label(DataFrameLeft,font=("arial",12,"bold"),text="Book Title:",padx=2,pady=6,bg="powder blue")
+        lblBookTitle=Label(DataFrameLeft,font=("arial",12,"bold"),text="Book Title:",padx=30,pady=6,bg="powder blue")
         lblBookTitle.grid(row=1,column=2,sticky=W)
         txtBookTitle=Entry(DataFrameLeft,font=("arial",12,"bold"),textvariable=self.booktitle_var,width=29)
         txtBookTitle.grid(row=1,column=3)
 
-        lblAuthor=Label(DataFrameLeft,font=("arial",12,"bold"),text="Author Name:",padx=2,pady=6,bg="powder blue")
+        lblAuthor=Label(DataFrameLeft,font=("arial",12,"bold"),text="Author Name:",padx=30,pady=6,bg="powder blue")
         lblAuthor.grid(row=2,column=2,sticky=W)
         txtAuthor=Entry(DataFrameLeft,font=("arial",12,"bold"),textvariable=self.author_var,width=29)
         txtAuthor.grid(row=2,column=3)
 
-        lblActualPrice=Label(DataFrameLeft,font=("arial",12,"bold"),text="Actual Price:",padx=2,pady=6,bg="powder blue")
+        lblActualPrice=Label(DataFrameLeft,font=("arial",12,"bold"),text="Actual Price:",padx=30,pady=6,bg="powder blue")
         lblActualPrice.grid(row=3,column=2,sticky=W)
         txtActualPrice=Entry(DataFrameLeft,font=("arial",12,"bold"),textvariable=self.finalprice_var,width=29)
         txtActualPrice.grid(row=3,column=3)
 
-        lblDateBorrowed=Label(DataFrameLeft,font=("arial",12,"bold"),text="Date Borrowed",padx=2,pady=6,bg="powder blue")
+        lblDateBorrowed=Label(DataFrameLeft,font=("arial",12,"bold"),text="Date Borrowed",padx=30,pady=6,bg="powder blue")
         lblDateBorrowed.grid(row=4,column=2,sticky=W)
         txtDateBorrowed=Entry(DataFrameLeft,font=("arial",12,"bold"),textvariable=self.dateborrowed_var,width=29)
         txtDateBorrowed.grid(row=4,column=3)
 
-        lblDateDue=Label(DataFrameLeft,font=("arial",12,"bold"),text="Date Due:",padx=2,pady=6,bg="powder blue")
+        lblDateDue=Label(DataFrameLeft,font=("arial",12,"bold"),text="Date Due:",padx=30,pady=6,bg="powder blue")
         lblDateDue.grid(row=5,column=2,sticky=W)
         txtDateDue=Entry(DataFrameLeft,font=("arial",12,"bold"),textvariable=self.datedue_var,width=29)
         txtDateDue.grid(row=5,column=3)
 
 
-        lblDateOverdate=Label(DataFrameLeft,font=("arial",12,"bold"),text="Return Date:",padx=2,pady=6,bg="powder blue")
+        lblDateOverdate=Label(DataFrameLeft,font=("arial",12,"bold"),text="Return Date:",padx=30,pady=6,bg="powder blue")
         lblDateOverdate.grid(row=6,column=2,sticky=W)
         txtDateOverdate=Entry(DataFrameLeft,font=("arial",12,"bold"),textvariable=self.dateoverdue_var,width=29)
         txtDateOverdate.grid(row=6,column=3)
@@ -117,11 +117,14 @@ class LibraryManagementSystem:
 
         #=======================================DataFrame Right=============================
 
-        DataFrameRight=LabelFrame(frame,padx=20,text="Book Details",bg="powder blue",fg="green",bd=12,relief=RIDGE,font=("arial",12,"bold"))
-        DataFrameRight.place(x=870,y=5,width=580,height=350)
+        DataFrameRight=LabelFrame(frame,padx=20,text="Book Details",bg="powder blue",fg="green",bd=12,relief=RIDGE,font=("times new roman",14,"bold"))
+        DataFrameRight.place(x=870,y=5,width=600,height=350)
 
-        self.txtBox=Text(DataFrameRight,font=("arial",12,"bold"),width=32,height=16,padx=2,pady=6)
+        self.txtBox=Text(DataFrameRight,font=("arial",12,"bold"),width=26,height=15,padx=2,pady=6)
         self.txtBox.grid(row=0,column=2)
+        textScrollbar=Scrollbar(DataFrameRight)
+        textScrollbar.grid(row=0,column=3,sticky="ns")
+        textScrollbar.config(command=self.txtBox.yview)
 
         listScrollbar=Scrollbar(DataFrameRight)
         listScrollbar.grid(row=0,column=1,sticky="ns")
@@ -277,9 +280,9 @@ class LibraryManagementSystem:
 
 
         
-        listBox=Listbox(DataFrameRight,font=("arial",12,"bold"),width=20,height=16)
+        listBox=Listbox(DataFrameRight,font=("arial",12,"bold"),width=30,height=15)
         listBox.bind("<<ListboxSelect>>",SelectBook)
-        listBox.grid(row=0,column=0,padx=4)
+        listBox.grid(row=0,column=0,padx=2)
         listScrollbar.config(command=listBox.yview)
 
         for item in listBooks:
@@ -289,22 +292,22 @@ class LibraryManagementSystem:
         Framebutton=Frame(self.root,bd=12,relief=RIDGE,padx=20,bg="powder blue")
         Framebutton.place(x=0,y=530,width=1530,height=70)
 
-        btnAddData=Button(Framebutton,command=self.adda_data,text="Add Data",font=("arial",12,"bold"),width=23,bg="blue",fg="white")
+        btnAddData=Button(Framebutton,command=self.adda_data,text="Add Data",font=("arial",12,"bold"),width=23,bg="tomato",fg="white")
         btnAddData.grid(row=0,column=0)
 
-        btnAddData=Button(Framebutton,command=self.showData,text="Show Data",font=("arial",12,"bold"),width=23,bg="blue",fg="white")
+        btnAddData=Button(Framebutton,command=self.showData,text="Show Data",font=("arial",12,"bold"),width=23,bg="tomato",fg="white")
         btnAddData.grid(row=0,column=1)
 
-        btnAddData=Button(Framebutton,command=self.update,text="Update",font=("arial",12,"bold"),width=23,bg="blue",fg="white")
+        btnAddData=Button(Framebutton,command=self.update,text="Update",font=("arial",12,"bold"),width=23,bg="tomato",fg="white")
         btnAddData.grid(row=0,column=2)
 
-        btnAddData=Button(Framebutton,command=self.delete,text="Delete",font=("arial",12,"bold"),width=23,bg="blue",fg="white")
+        btnAddData=Button(Framebutton,command=self.delete,text="Delete",font=("arial",12,"bold"),width=23,bg="tomato",fg="white")
         btnAddData.grid(row=0,column=3)
 
-        btnAddData=Button(Framebutton,command=self.reset,text="Reset",font=("arial",12,"bold"),width=23,bg="blue",fg="white")
+        btnAddData=Button(Framebutton,command=self.reset,text="Reset",font=("arial",12,"bold"),width=23,bg="tomato",fg="white")
         btnAddData.grid(row=0,column=4)
 
-        btnAddData=Button(Framebutton,command=self.iExit,text="Exit",font=("arial",12,"bold"),width=23,bg="blue",fg="white")
+        btnAddData=Button(Framebutton,command=self.iExit,text="Exit",font=("arial",12,"bold"),width=23,bg="tomato",fg="white")
         btnAddData.grid(row=0,column=5)
 
         #=======================================information Frame=============================
